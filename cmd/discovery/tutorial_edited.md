@@ -1,18 +1,22 @@
 # IBM Cloud Configuration Discovery
 
 Let's take a scenario that you have an infrastructure containing multiple services provisioned on IBM Cloud. One of your business requirement is to migrate existing infrastructure setup to declarative approach using Terraform. Since you have basic skill of Terraform, thinking more about challenges and workaround to create an entire infrastructure to Terraform. 
+
 You need not think about, here is a tutorial that walks your through the [Cloud Configuration Discovery](https://test.cloud.ibm.com/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-terraformer-intro) to simplify your requirement.
+
 For more information, about getting started with the tool, see [blog](https://ibm.box.com/s/0ou4erd2t65ndiv1v83egfjgle699pcy).
 
-Objectives
+## Objectives
+
 Following are the objectives that are covered in this tutorial.
 - Usage
 - Prerequisites 
 - Installation and setup
 - Generate infrastructure to code
-- 
+- Analyze the code
+- Related reference content
 
-## Usage
+### Usage
 
 The Cloud Configuration Discovery is a reverse engineering tool used to generate your cloud infrastructure to code. Recreating or coding entire provisioned resource requires minimal coding skill and less time to implement.
 
@@ -20,12 +24,12 @@ The Cloud configuration discovery is a command line tool that augments an open-s
 
 Google Terraformer is an open-source project with a number of capabilities that are native to IBM Cloud. For more information, about Google Terrafomer, see [Google Terraform support for IBM Cloud](https://github.com/GoogleCloudPlatform/terraformer/blob/master/docs/ibmcloud.md)
 
-## Prerequisites
+### Prerequisites
 
 In your local system, following prerequisites must be met to install the Cloud Configuration Discovery plugin.
 - [Terraform](https://test.cloud.ibm.com/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started#tf_installation)
 
-## Installation and setup
+### Installation and setup
 
 The installation can be done by following two approaches:
 
@@ -57,7 +61,7 @@ Install by using the precompiled binary files manually by following the given st
     ```
     go install github.com/IBM-Cloud/configuration-discovery/cmd/discovery
     ```
-### Setup your environment
+#### Setup your environment
 
 - Export the required `env vars` 
     * IC_API_KEY: Provide your IBM Cloud API key. This imports resources that your account has access.
